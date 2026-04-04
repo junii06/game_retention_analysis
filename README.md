@@ -1,4 +1,3 @@
-# game_retention_analysis
 
 ## 🏠프로젝트 제목 
 모바일 게임 유저 행동 로그 분석 프로젝트
@@ -13,6 +12,14 @@ Kaggel의 Player Analytics Event Stream Data를 활용하여</br>
 
 이에 따라 '초기 행동이 리텐션에 미치는 영향'을 중심으로</br>
 문제 정의 → 가설 설정 → 행동 지표 설계 → 세그먼트 분석 → 전략 도출의 구조로 분석을 진행하였다.
+
+
+## 📂 데이터 출처
+- 데이터셋: Player Analytics Event Stream Data (Kaggle)
+- 대용량 로그 데이터(Parquet) 기반으로 분석을 진행하였으며, 용량 제한으로 원본 데이터는 본 Repository에 포함하지 않았습니다.
+- 첨부의 user_sample.csv(원본 일부 발췌) 또는 아래 링크를 통해 원본 데이터를 확인할 수 있습니다.
+
+👉 https://www.kaggle.com/datasets/zburns/player-analytics-dataset?resource=download
 
 
 ## 🎯문제 정의 
@@ -69,6 +76,23 @@ event_proxy_cnt 기준으로 유저를 구간화한 결과:
 - Data Handling: Parquet 기반 대용량 로그 데이터 처리
 - Analysis: Retention / Cohort / Segment Analysis
 - Visualization: Excel(Heatmap, Pivot)
+
+
+## 📂파일 구조
+"""
+GAME_RETENTION_ANALYSIS/
+├── data/ # raw 데이터 샘플
+│ └── user_sample.csv
+│
+├── notebooks/ # eda, 전처리&분석 코드
+│ ├── eda_data_overview.ipynb
+│ └── game_retention_analysis.ipynb
+│
+├── results/ # 분석 결과 시각화
+│ ├── retention_by_engagement_and_ads.xlsx
+│ └── cohort_retention_analysis.xlsx
+
+"""
 
 
 ## ⚠️한계
