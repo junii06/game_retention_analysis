@@ -79,20 +79,21 @@ event_proxy_cnt 기준으로 유저를 구간화한 결과:
 
 
 ## 📂파일 구조
-"""
+```
 GAME_RETENTION_ANALYSIS/
 ├── data/ # raw 데이터 샘플
 │ └── user_sample.csv
 │
 ├── notebooks/ # eda, 전처리&분석 코드
-│ ├── eda_data_overview.ipynb
-│ └── game_retention_analysis.ipynb
+│ ├── 01.eda_data_overview.ipynb
+│ └── 02.game_retention_analysis.ipynb
 │
 ├── results/ # 분석 결과 시각화
-│ ├── retention_by_engagement_and_ads.xlsx
-│ └── cohort_retention_analysis.xlsx
-
-"""
+│ ├── 01.retention_by_engagement_and_ads.xlsx
+│ └── 02.cohort_retention_analysis.xlsx
+│
+└── README.md
+```
 
 
 ## ⚠️한계
