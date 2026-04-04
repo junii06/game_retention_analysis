@@ -68,7 +68,7 @@ event_proxy_cnt 기준으로 유저를 구간화한 결과:
 - Python: pandas
 - Data Handling: Parquet 기반 대용량 로그 데이터 처리
 - Analysis: Retention / Cohort / Segment Analysis
-- Visualization: Excel(Heatmap)
+- Visualization: Excel(Heatmap, Pivot)
 
 
 ## ⚠️한계
